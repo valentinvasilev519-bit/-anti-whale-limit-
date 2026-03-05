@@ -1,0 +1,20 @@
+name: Anti-Whale Cloud Deploy
+on:
+  push:
+    branches: [ main ] # Стартира автоматично при промени в main.py
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }} # Твоят ключ за проект 489120
+
+      - name: Run Anti-Whale Logic
+        run: python main.py # Изпълнява твоя Gas Oracle и Dashboard логика
+
