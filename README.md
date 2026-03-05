@@ -1,3 +1,5 @@
+![Google Cloud Security](https://img.shields.io/badge/Security-Google%20Encrypted-blue?style=for-the-badge&logo=google-cloud)
+![Binance Smart Chain](https://img.shields.io/badge/Network-BSC%20Support-F3BA2F?style=for-the-badge&logo=binance)
 # 🐋 Anti-Whale Limit & Gas Oracle 
 > **Security Protocol:** Google Encrypted Layer Enabled 🔒
 
