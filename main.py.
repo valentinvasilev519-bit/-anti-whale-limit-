@@ -1,0 +1,14 @@
+# Anti-Whale & Gas Oracle Logic 🍋
+def process_data(amount, gas_price):
+    WHALE_LIMIT = 1000 
+    LOW_FEE = 20
+    
+    if amount > WHALE_LIMIT:
+        return "🚨 Whale Alert!"
+    if gas_price <= LOW_FEE:
+        return "✅ Low Fee - Processed!"
+    return "⏳ Waiting..."
+
+# Тест
+print(process_data(500, 15))
+
